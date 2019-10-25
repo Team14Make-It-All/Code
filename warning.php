@@ -8,12 +8,27 @@
 <title> Helpdesk </title>
 <style type="text/css">
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 	background-color: #C0C0C0;
+}
+h1 {
+	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+}
+.massive {
+	font-size:1000%;
+	text-align:center;
 }
 #grad1 {
   background-color: #FFD700;
   background-image: linear-gradient(#FFD700, #D6AF36);
+}
+#grad2 {
+  background-color: #FFD700;
+  background-image: linear-gradient(#D6AF36, #FFD700);
+}
+#highlight {
+  background-color: #AA0000;
+  background-image: linear-gradient(#AA0000, #600000);
 }
 #b1 {
 	height: 50px;
@@ -48,32 +63,31 @@ td, th {
 	padding-left: 10px;
     padding-right: 10px;
 }
+.left {
+  overflow:hidden;
+}
+.left-side {
+  float:left;
+  width:30%;
+}
 
 </style>
 <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
 <script type = "text/javascript">
-var techUserN = specialist
-var helpUserN = hdoperator
-var techPassW = specific
-var helpPassW = general
+var techUserN = 'specialist'
+var helpUserN = 'hdoperator'
+var techPassW = 'specific'
+var helpPassW = 'general'
 </script>
 
 </head>
 
 
 <body>
-	<div id="grad1" style="text-align:center">
-		<h1 class="center">Prototype - Login</h1>
-		
-		<form id="details" class="center">
-		<h2>First name: <input name="username" type="text" class="larger" id="username"  size="12" /></h2>
-		<h2>Last name: <input name="password" type="text" class="larger" id="password"  size="12" /></h2>
-		</form>
-		<button type="button" id="b1" onclick="window.location.href='/TeamProjects/mainPage.php'"><h2>Login</h2></button>
-		</br>
-	</div>
-	
+<h1  class="massive">WARNING info missing</h1>
+
+
 </body>
 
 
