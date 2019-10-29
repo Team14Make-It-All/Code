@@ -9,7 +9,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #000000;
   text-align: left;
   padding: 8px;
 }
@@ -19,9 +19,19 @@ h2 {
   text-decoration: underline;
 }
 
-tr:nth-child(even) {
+.todo {
+  background-color: #ffcccb;	
+}
+
+.complete {
+  background-color: #90ee90;
+}
+
+body {
   background-color: #dddddd;
 }
+
+
 </style>
 </head>
 <body>
@@ -29,68 +39,83 @@ tr:nth-child(even) {
 <h2>To Do List</h2>
 
 <br>
-
+<div class="todo">
 <table>
   <tr>
     <th>Job Name</th>
     <th>Job ID</th>
     <th>Job Deadline</th>
+	<th>Job Completion</th>
   </tr>
   <tr>
     <td>Removing questionable stains from office computers</td>
     <td>G12055</td>
     <td>25/12/2019</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
   <tr>
     <td>Finding out the half-life 3 release date</td>
     <td>N3V312</td>
     <td>1/1/3000</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
   <tr>
     <td>Figuring out how bitcoin works</td>
     <td>G58945</td>
     <td>2//2/2022</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
   <tr>
     <td>GPU malfunction</td>
     <td>G585648</td>
     <td>8/9/2020</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
   <tr>
     <td>Renewing room 1 office software</td>
     <td>S845692</td>
     <td>9/12/2019</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
   <tr>
     <td>Replacing all printers, for circuit washing machines</td>
     <td>H482168</td>
     <td>8/7/2019</td>
+	<td><button class="editbtn">Complete</button></td>
   </tr>
 </table>
+</div>
 
 <br><br><br>
 
-<h2>Completed Jobs</h2>
+<h2>Completed Jobs  <button class="editbtn">Clear All</button></h2> 
 
 <br>
 
+<div class="complete">
+<h4>
 <table>
   <tr>
     <th>Job Name</th>
     <th>Job ID</th>
     <th>Job Deadline</th>
+	<th></th>
   </tr>
   <tr>
     <td>Fixing a piece of code that was messing with the washing machines</td>
     <td>SH542691</td>
     <td>2/10/2019</td>
+	<td><button class="editbtn">Undo Completion</button></td>
   </tr>
   <tr>
     <td>Fixing the computers at Centro comercial Moctezuma</td>
     <td>H845845</td>
     <td>H482184</td>
+	<td><button class="editbtn">Undo Completion</button></td>
   </tr>
 </table>
+</h4>
+</div>
 
 </body>
 </html>
