@@ -22,10 +22,10 @@
 
   <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
     <h5 class="w3-bar-item"></h5>
-    <button class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '1')">Client information</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '2')">Problem information</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '3')">Equipment information</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '4')">Technitian information</button>
+    <button id="CI" class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '1')">Client information</button>
+    <button id="PI" class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '2')">Problem information</button>
+    <button id="EI" class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '3')">Equipment information</button>
+    <button id="TI" class="w3-bar-item w3-button tablink" onclick="openTabVert(event, '4')">Technitian information</button>
   </div>
 
   <div style="margin-left:130px">
@@ -40,7 +40,7 @@
         Last name:<br>
         <input type="text" name="lastname" value="Mouse">
         <br><br>
-        <input type = "button" onclick="openTabVert(event, '2')" value = "Next">
+        <input type = "button" onclick="openTabVert2(event, '2', 'PI')" value = "Next">
 
 
     </div>
@@ -54,8 +54,8 @@
       Last name:<br>
       <input type="text" name="lastname" value="Duck">
       <br><br>
-      <input type = "button" onclick="openTabVert(event, '1')" value = "Previous">
-      <input type = "button" onclick="openTabVert(event, '3')" value = "Next">
+      <input type = "button" onclick="openTabVert2(event, '1', 'CI')" value = "Previous">
+      <input type = "button" onclick="openTabVert2(event, '3', 'EI')" value = "Next">
 
     </div>
 
@@ -68,8 +68,8 @@
       Last name:<br>
       <input type="text" name="lastname" value="Wally">
       <br><br>
-      <input type = "button" onclick="openTabVert(event, '2')" value = "Previous">
-      <input type = "button" onclick="openTabVert(event, '4')" value = "Next">
+      <input type = "button" onclick="openTabVert2(event, '2', 'PI')" value = "Previous">
+      <input type = "button" onclick="openTabVert2(event, '4', 'TI')" value = "Next">
 
 
     </div>
@@ -83,7 +83,7 @@
       Last name:<br>
       <input type="text" name="lastname" value="Daniel">
       <br><br>
-      <input type = "button" onclick="openTabVert(event, '3')" value = "Previous">
+      <input type = "button" onclick="openTabVert2(event, '3', 'EI')" value = "Previous">
       <input type = "submit" value = "Submit">
     </form>
 
@@ -117,6 +117,7 @@ function openTabVert(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-purple";
+  return evt.currentTarget.className;
 }
 
 function openTabHoriz(tabName) {
@@ -131,6 +132,22 @@ function openTabHoriz(tabName) {
 function resetForm(formID) {
   document.getElementById(formID).reset();
 }
+
+function openTabVert2(evt, tabName, tabName2) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("verttab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active", "");
+    document.getElementById(tabName2).click();
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += "active";
+}
+
 </script>
 
 </body>
