@@ -6,7 +6,6 @@
 <body>
 
 <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openTabHoriz('Current'); resetForm('allInfo');">New Problem</button>
   <button class="w3-bar-item w3-button" onclick="openTabHoriz('Current'); resetForm('allInfo'); openTabVert2(event, '1', 'CI');">New Problem</button>
   <button class="w3-bar-item w3-button" onclick="openTabHoriz('Current')">Current</button>
   <button class="w3-bar-item w3-button" onclick="openTabHoriz('Active')">Active</button>
