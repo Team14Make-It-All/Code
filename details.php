@@ -83,15 +83,19 @@ body {
 <body>
 
 	<div class="boxed">
-		Job Name: Removing questionable stains from office computers 
+		Problem Name: Figuring out how bitcoin works 
 	</div>
 	<br>
 	<div class="boxed">
-		Job ID: G12055
+		Problem ID: G12055
 	</div>
 	<br>
 	<div class="boxed">	
-		Job Deadline: 25/12/2019
+		Problem Completed: null
+	</div>
+	<br>
+	<div class="boxed">	
+		Current Technician: Harold Jefferson - GBR
 	</div>
 	<br>
 	<button id="item" class="editbtn">Item Information</button>
@@ -102,6 +106,10 @@ body {
 	
 	<textarea name="message" rows="10" cols="30">
 	Problem Notes:
+	</textarea>
+	
+	<textarea name="message" rows="10" cols="30">
+	Solution Notes:
 	</textarea>
 	
 	<br><br><br><br>
