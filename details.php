@@ -87,7 +87,7 @@ body {
 	</div>
 	<br>
 	<div class="boxed">
-		Problem ID: G12055
+		Problem ID: 2
 	</div>
 	<br>
 	<div class="boxed">	
@@ -105,7 +105,8 @@ body {
 	
 	
 	<textarea name="message" rows="10" cols="30">
-	Problem Notes:
+	Problem Notes: Greg really thinks bitcoin is the future so i'm gonna try and get some work done on understanding it all.
+  Progress Update - I have transcended human intelligence and am now a billionaire.
 	</textarea>
 	
 	<textarea name="message" rows="10" cols="30">
