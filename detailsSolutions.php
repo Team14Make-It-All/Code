@@ -25,6 +25,7 @@ h2 {
 .complete {
   background-color: #90ee90;
 }
+
 .boxed {
 	border: 1px solid black;
 	display: inline-block;
@@ -33,9 +34,11 @@ h2 {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 body {
   background-color: #dddddd;
 }
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -49,6 +52,7 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -57,6 +61,7 @@ body {
   border: 1px solid #888;
   width: 80%;
 }
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -64,26 +69,33 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
+
+
 </style>
 </head>
 <body>
 
 	<div class="boxed">
-		Job Name: Removing questionable stains from office computers 
+		Problem Name: Fixing a piece of code that was messing with the washing machines 
 	</div>
 	<br>
 	<div class="boxed">
-		Job ID: G12055
+		Problem ID: 8
 	</div>
 	<br>
 	<div class="boxed">	
-		Job Deadline: 25/12/2019
+		Problem Completed: 8
+	</div>
+	<br>
+	<div class="boxed">	
+		Technician: Harold Jefferson - GBR
 	</div>
 	<br>
 	<button id="item" class="editbtn">Item Information</button>
@@ -93,7 +105,11 @@ body {
 	
 	
 	<textarea name="message" rows="10" cols="30">
-	Problem Notes:
+	Problem Notes: Greg said it was acting weird on mondays.
+	</textarea>
+	
+	<textarea name="message" rows="10" cols="30">
+	Solution Notes: Greg was being an idiot and didn't plug it in.
 	</textarea>
 	
 	<br><br><br><br>
